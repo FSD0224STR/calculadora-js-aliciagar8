@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+.calculator{
+   
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+        "input input input input"
+        "seven  eight  nine  division"
+        "four    five  six  product"
+        "one    two    three  substract"
+        "clear  zero  solution  add";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 350px;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing:border-box;
+    background-color: grey;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.display{
+    grid-area: input;
+    padding: 20px;
+    background-color: rgb(185, 184, 184);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.tecla1{
+    grid-area: one;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+}
+
+.tecla2{
+    grid-area: two;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+}
+
+.tecla3{
+    grid-area: three;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+
+}
+
+.tecla4{
+    grid-area: four;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+
+
+}
+
+.tecla5{
+    grid-area: five;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+}
+
+
+.tecla6{
+    grid-area: six;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+
+}
+
+.tecla7{
+    grid-area: seven;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+
+}
+
+.tecla8{
+    grid-area: eight;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+
+}
+.tecla9{
+    grid-area: nine;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+}
+
+.tecla0{
+    grid-area: zero;
+    background-color: rgb(48, 49, 49);
+    color:aliceblue;
+    font-size: 20px
+}
+
+
+.clear{
+    grid-area: clear;
+    background-color: blue;
+    color: white;
+    font-size: 20px
+}
+
+
+
+.add{
+    grid-area: add;
+    font-size: 20px
+
+
+}
+
+.solution{
+    grid-area: solution;
+    background-color: red;
+    color:white;
+    font-size: 20px
+
+}
+
+.substract{
+    grid-area: substract;
+    font-size: 20px
+
+}
+
+.division{
+    grid-area: division;
+    font-size: 20px
+
+}
+
+.product{
+    grid-area: product;
+    font-size: 20px
+
+}
+
+#button:hover{
+    background-color:rgb(80, 82, 82)
+
+}
+
+.clear:hover{
+    background-color: rgb(6, 105, 255);
+}
+
+.solution:hover{
+    background-color: rgb(255, 125, 86);
+}
